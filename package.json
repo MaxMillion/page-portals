@@ -4,5 +4,12 @@
   "id": "page-portal@erikvold.com",
   "author": "Erik Vold",
   "license": "MPL 2.0",
-  "version": "0.1"
+  "version": "0.1.1",
+  "preferences": [{
+    "description": "Determines portal size.",
+    "name": "portal-padding",
+    "type": "integer",
+    "value": 50,
+    "title": "Portal Padding"
+  }]
 }
