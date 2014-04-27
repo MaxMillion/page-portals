@@ -11,10 +11,7 @@ window.document.body.addEventListener('click', event => {
   let isLeftClick = button === 0;
 
   if (isLeftClick && altKey && !shiftKey && !metaKey && !ctrlKey) {
-    let link = closest(target, 'a');
-    if (!link) {
-      let url = (window.location + "");
-      self.port.emit('switch', { href: url, location: url });
-    }
+    let url = (window.location + "");
+    self.port.emit('switch', { href: url, location: url });
   }
 }, false);
